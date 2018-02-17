@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.android.curso.agendaodonto.NovoUsuarioActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <EditText
+            android:id="@+id/ed_novo_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite seu e-mail"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/ed_nova_senha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ed_novo_email"
+            android:hint="Digite sua senha"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btCadastrar"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ed_nova_senha"
+            android:layout_centerInParent="true"
+            android:text="Cadastrar"
+            android:onClick="showDialog"
+            />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
